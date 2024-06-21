@@ -96,8 +96,8 @@ export const ApplicationViews = () => {
             path=":taskId/editTask"
             element={<EditTask currentUser={currentUser} />}
           />
-        </Route>
-      </Route> */}
+        </Route>*/}
+      </Route> 
     </Routes>
   );
 };

@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
-import { getUserByEmail } from "../services/userServices"
+import { getUserByEmail } from "../../services/userServices"
 
 
 export const Login = () => {
