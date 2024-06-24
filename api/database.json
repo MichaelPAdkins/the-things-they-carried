@@ -1,93 +1,93 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "mostexalted",
-        "email": "gmail@gmail.com"
-      },
-      {
-        "id": 2,
-        "username": "cooterrasputin",
-        "email": "email@email.com"
-      }
-    ],
-    "items": [
-      {
-        "id": 1,
-        "ownerId": 1,
-        "name": "Mystery Ranch Blitz 35",
-        "serial": "N/A",
-        "material": "Black Cordura",
-        "type": "Backpack",
-        "storable": false,
-        "canStore": true,
-        "value": "$300",
-        "photo": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 2,
-        "ownerId": 1,
-        "name": "Fuji X100V",
-        "serial": "01A02476",
-        "material": "Silver Metallic",
-        "type": "Camera",
-        "storable": true,
-        "canStore": true,
-        "value": "$1400",
-        "photo": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 3,
-        "ownerId": 1,
-        "name": "Olight Baton 3 Flashlight",
-        "serial": "L51203284",
-        "material": "Red Metallic",
-        "type": "Flashlight",
-        "storable": true,
-        "canStore": true,
-        "value": "$90",
-        "photo": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 4,
-        "ownerId": 2,
-        "name": "Crumpler",
-        "serial": "N/A",
-        "material": "Red, Blue, and Black Cordura",
-        "type": "Messenger Bag",
-        "storable": false,
-        "canStore": true,
-        "value": "$200",
-        "photo": "https://via.placeholder.com/150"
-      },
-      {
-        "id": 5,
-        "ownerId": 2,
-        "name": "Midori Travel Journal",
-        "serial": "N/A",
-        "material": "Brown Leather",
-        "type": "Journal",
-        "storable": true,
-        "canStore": true,
-        "value": "60",
-        "photo": "https://via.placeholder.com/150"
-      }
-    ],
-"carry": [
-  {
-    "id": 1,
-    "userId": 2,
-    "name": "General Summer EDC",
-    "purpose": "EDC"
-  },
-  {
-    "id": 1,
-    "userId": 1,
-    "name": "Summer Street Photography",
-    "purpose": "Photography"
-  }
-],
-"Carry_Items": [
+  "users": [
+    {
+      "id": 1,
+      "username": "mostexalted",
+      "email": "gmail@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "cooterrasputin",
+      "email": "email@email.com"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "ownerId": 1,
+      "name": "Mystery Ranch Blitz 35",
+      "serial": "N/A",
+      "material": "Black Cordura",
+      "type": "Backpack",
+      "storable": false,
+      "canStore": true,
+      "value": "$300",
+      "photo": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "ownerId": 1,
+      "name": "Fuji X100V",
+      "serial": "01A02476",
+      "material": "Silver Metallic",
+      "type": "Camera",
+      "storable": true,
+      "canStore": true,
+      "value": "$1400",
+      "photo": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "ownerId": 1,
+      "name": "Olight Baton 3 Flashlight",
+      "serial": "L51203284",
+      "material": "Red Metallic",
+      "type": "Flashlight",
+      "storable": true,
+      "canStore": true,
+      "value": "$90",
+      "photo": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "ownerId": 2,
+      "name": "Crumpler",
+      "serial": "N/A",
+      "material": "Red, Blue, and Black Cordura",
+      "type": "Messenger Bag",
+      "storable": false,
+      "canStore": true,
+      "value": "$200",
+      "photo": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "ownerId": 2,
+      "name": "Midori Travel Journal",
+      "serial": "N/A",
+      "material": "Brown Leather",
+      "type": "Journal",
+      "storable": true,
+      "canStore": true,
+      "value": "60",
+      "photo": "https://via.placeholder.com/150"
+    }
+  ],
+  "carry": [
+    {
+      "id": 1,
+      "userId": 2,
+      "name": "General Summer EDC",
+      "purpose": "EDC"
+    },
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "Summer Street Photography",
+      "purpose": "Photography"
+    }
+  ],
+  "Carry_Items": [
     {
       "id": 1,
       "itemId": 2,
