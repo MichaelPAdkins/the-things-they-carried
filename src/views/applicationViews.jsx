@@ -3,6 +3,7 @@ import { Home } from "../components/home/home.jsx";
 import { Outlet, Route, Routes } from "react-router-dom";
 import { Navbar } from "../components/navbar/navbar";
 import { ItemCreateForm } from "../components/itemEntry/ItemForm.jsx";
+import { CarryCreateForm } from "../components/carry/CarryForm.jsx";
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
@@ -26,6 +27,7 @@ export const ApplicationViews = () => {
       >
         <Route index element={<Home currentUser={currentUser} />} />
         <Route path="itemForm" element={<ItemCreateForm currentUser={currentUser} />} />
+        <Route path="carryForm" element={<CarryCreateForm currentUser={currentUser} />} />
         {/* <Route path=":itemId/editItem" element={<EditItem currentUser={currentUser} />} /> */}
       </Route>
     </Routes>
