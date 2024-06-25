@@ -109,10 +109,10 @@ export const ItemCreateForm = ({currentUser}) => {
       <div>
       <div>Can you pack it?</div>
         <Input
-          type="radio"
+          type="checkbox"
           onChange={(item) => {
             const itemCopy = { ...myItem };
-            itemCopy.storable = item.target.value;
+            itemCopy.storable = item.target.checked;
             setMyItem(itemCopy);
           }}
         />
@@ -120,10 +120,10 @@ export const ItemCreateForm = ({currentUser}) => {
       <div>
         <div>Container?</div>
         <Input
-          type="radio"
+          type="checkbox"
           onChange={(item) => {
             const itemCopy = { ...myItem };
-            itemCopy.canStore = item.target.value;
+            itemCopy.canStore = item.target.checked;
             setMyItem(itemCopy);
           }}
         />

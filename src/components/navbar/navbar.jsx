@@ -26,7 +26,7 @@ export const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link className="navbar-link" to="createCarry">
+          <Link className="navbar-link" to="./carryForm">
             Create New Carry
           </Link>
         </li>
