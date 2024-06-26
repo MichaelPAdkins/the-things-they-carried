@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { getAllItems, deleteItem } from '../../services/inventoryServices.jsx';
+import { useNavigate } from 'react-router-dom';
 import './Inventory.css';
 
 export const Inventory = () => {
   const [items, setItems] = useState([]);
-
+const navigate = useNavigate()
   useEffect(() => {
     getAllItems().then((items) => setItems(items));
   }, []);
@@ -26,6 +27,7 @@ export const Inventory = () => {
             <p><strong>Material:</strong> {item.material}</p>
             <p><strong>Type:</strong> {item.type}</p>
             <p><strong>Price:</strong> {item.value}</p>
+            <button className="edit-button" onClick={() => navigate(`/edit/${item.id}`)}>Edit</button>
             <button className="delete-button" onClick={() => handleDelete(item.id)}>Delete</button>
           </div>
         </div>
