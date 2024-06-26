@@ -74,30 +74,6 @@
     },
     {
       "userId": 1,
-      "name": "RushGold",
-      "serial": "n/a",
-      "material": "Amyl Nitrate",
-      "type": "Poppers",
-      "value": "Priceless",
-      "photo": "RushGold.jpg",
-      "storable": "on",
-      "canStore": "on",
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "name": "Extra pure '24 cocaine",
-      "serial": "n/a",
-      "material": "Pure Bolivian Marching Powder",
-      "type": "That fishscale",
-      "value": "however much a kilo is worth",
-      "photo": "cocaine.jpb",
-      "storable": "on",
-      "canStore": false,
-      "id": 7
-    },
-    {
-      "userId": 1,
       "name": "na",
       "serial": "na",
       "material": "na",
@@ -110,27 +86,15 @@
     },
     {
       "userId": 1,
-      "name": "milk",
-      "serial": "milk",
-      "material": "milk",
-      "type": "milk",
-      "value": "milk",
-      "photo": "milk.jpg",
+      "name": "hairgel",
+      "serial": "n/a",
+      "material": "viscous liquid",
+      "type": "styling product",
+      "value": "$9",
+      "photo": "image.jpg",
       "storable": true,
       "canStore": false,
       "id": 9
-    },
-    {
-      "userId": 1,
-      "name": "gold",
-      "serial": "gold",
-      "material": "gold",
-      "type": "gold",
-      "value": "gold",
-      "photo": "goldbond.jpg",
-      "storable": true,
-      "canStore": false,
-      "id": 10
     }
   ],
   "carry": [

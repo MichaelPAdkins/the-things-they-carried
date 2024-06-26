@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAllItems } from '../../services/inventoryServices.jsx';
+import { getAllItems, deleteItem } from '../../services/inventoryServices.jsx';
 import './Inventory.css';
 
 export const Inventory = () => {
@@ -8,6 +8,13 @@ export const Inventory = () => {
   useEffect(() => {
     getAllItems().then((items) => setItems(items));
   }, []);
+
+  const handleDelete = async (itemId) => {
+    const success = await deleteItem(itemId);
+    if (success) {
+      setItems((prevItems) => prevItems.filter(item => item.id !== itemId));
+    }
+  };
 
   return (
     <div className="inventory-container">
@@ -18,6 +25,7 @@ export const Inventory = () => {
             <p><strong>Serial:</strong> {item.serial}</p>
             <p><strong>Material:</strong> {item.material}</p>
             <p><strong>Type:</strong> {item.type}</p>
+            <button className="delete-button" onClick={() => handleDelete(item.id)}>Delete</button>
           </div>
         </div>
       ))}
