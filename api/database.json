@@ -74,27 +74,20 @@
     },
     {
       "userId": 1,
-      "name": "na",
-      "serial": "na",
-      "material": "na",
-      "type": "na",
-      "value": "na",
-      "photo": "na.jpb",
-      "storable": "on",
-      "canStore": "on",
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "name": "hairgel",
+      "name": "haribo gummy raspberries",
       "serial": "n/a",
-      "material": "viscous liquid",
-      "type": "styling product",
-      "value": "$9",
-      "photo": "image.jpg",
+      "material": "that juicy stuff",
+      "type": "candy",
+      "value": "$5000",
+      "photo": "raspberry.jpg",
       "storable": true,
-      "canStore": false,
-      "id": 9
+      "canStore": true,
+      "id": 10,
+      "user": {
+        "id": 1,
+        "username": "mostexalted",
+        "email": "gmail@gmail.com"
+      }
     }
   ],
   "carry": [
