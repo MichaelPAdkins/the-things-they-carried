@@ -78,7 +78,7 @@
       "serial": "n/a",
       "material": "that juicy stuff",
       "type": "candy",
-      "value": "$5000",
+      "value": "$50000000000",
       "photo": "raspberry.jpg",
       "storable": true,
       "canStore": true,
@@ -90,7 +90,7 @@
       }
     }
   ],
-  "carry": [
+  "carries": [
     {
       "id": 1,
       "userId": 2,
@@ -133,6 +133,12 @@
       "id": 4,
       "itemId": 5,
       "carryId": 2,
+      "creationTime": "2024-06-21T15:15:00Z"
+    },
+    {
+      "id": 5,
+      "itemId": 10,
+      "carryId": 1,
       "creationTime": "2024-06-21T15:15:00Z"
     }
   ]

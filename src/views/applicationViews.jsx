@@ -5,6 +5,7 @@ import { Navbar } from "../components/navbar/navbar";
 import { ItemCreateForm } from "../components/itemEntry/ItemForm.jsx";
 import { CarryCreateForm } from "../components/carry/CarryForm.jsx";
 import Inventory from "../components/inventory/Inventory.jsx";
+import { CurrentCarry } from "../components/currentCarry/currentCarry.jsx";
 
 
 export const ApplicationViews = () => {
@@ -32,6 +33,7 @@ export const ApplicationViews = () => {
         <Route path="carryForm" element={<CarryCreateForm currentUser={currentUser} />} />
         <Route path="inventory" element={<Inventory currentUser={currentUser} />} />
         <Route path="edit/:id" element={<ItemCreateForm currentUser={currentUser} />} />
+        <Route path="currentCarry" element={<CurrentCarry />} />
         {/* <Route path=":itemId/editItem" element={<EditItem currentUser={currentUser} />} /> */}
       </Route>
     </Routes>

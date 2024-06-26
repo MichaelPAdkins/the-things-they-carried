@@ -1,9 +1,9 @@
 export const getAllCarry = () => {
-    return fetch(`http://localhost:8088/carry`).then((res) => res.json())
+    return fetch(`http://localhost:8088/carries`).then((res) => res.json())
 }
 
 export const createCarry = (carry) => {
-    return fetch(`http://localhost:8088/carry`, {
+    return fetch(`http://localhost:8088/carries`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -13,12 +13,12 @@ export const createCarry = (carry) => {
 }
 export const getCarryById = (carry) => {
     return fetch(
-        `http://localhost:8088/carrys/${carry}?_expand=user`
+        `http://localhost:8088/carries/${carry}?_expand=user`
       ).then((res) => res.json());
   }
 
   export const updateCarry = (myCarry) => {
-    return fetch(`http://localhost:8088/carry/${myCarry.id}`, {
+    return fetch(`http://localhost:8088/carries/${myCarry.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -26,3 +26,8 @@ export const getCarryById = (carry) => {
       body: JSON.stringify(myCarry)
     })
   }
+
+  export const getCarryItems = () => {
+    return fetch(`http://localhost:8088/Carry_Items?_expand=item&_expand=carry`)
+      .then((res) => res.json());
+  };
