@@ -25,6 +25,7 @@ export const Inventory = () => {
             <p><strong>Serial:</strong> {item.serial}</p>
             <p><strong>Material:</strong> {item.material}</p>
             <p><strong>Type:</strong> {item.type}</p>
+            <p><strong>Price:</strong> {item.value}</p>
             <button className="delete-button" onClick={() => handleDelete(item.id)}>Delete</button>
           </div>
         </div>

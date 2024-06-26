@@ -86,15 +86,15 @@
     },
     {
       "userId": 1,
-      "name": "hairgel",
+      "name": "haribo gummy raspberries",
       "serial": "n/a",
-      "material": "viscous liquid",
-      "type": "styling product",
-      "value": "$9",
-      "photo": "image.jpg",
+      "material": "that juicy stuff",
+      "type": "candy",
+      "value": "$5",
+      "photo": "raspberry.jpg",
       "storable": true,
-      "canStore": false,
-      "id": 9
+      "canStore": true,
+      "id": 10
     }
   ],
   "carry": [
