@@ -2,6 +2,6 @@ export const Home =() => {
 
 
     return (
-        <h1>Kill me with a steamroller</h1>
+        <h1>The Things They Carried. . . .</h1>
     )
 }

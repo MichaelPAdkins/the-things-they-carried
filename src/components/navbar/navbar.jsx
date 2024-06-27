@@ -30,11 +30,11 @@ export const Navbar = () => {
             Create New Carry
           </Link>
         </li>
-        <li className="navbar-item">
+        {/* <li className="navbar-item">
           <Link className="navbar-link" to="archivedCarry">
             Carry Archives
           </Link>
-        </li>
+        </li> */}
         {localStorage.getItem("carry_user") ? (
           <li className="navbar-item">
             <Link

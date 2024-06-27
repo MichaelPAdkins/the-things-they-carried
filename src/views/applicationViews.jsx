@@ -4,7 +4,7 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import { Navbar } from "../components/navbar/navbar";
 import { ItemCreateForm } from "../components/itemEntry/ItemForm.jsx";
 import { CarryCreateForm } from "../components/carry/CarryForm.jsx";
-import Inventory from "../components/inventory/inventory.jsx"
+import { Inventory } from "../components/inventory/inventory.jsx"
 import { CurrentCarry } from "../components/currentCarry/currentCarry.jsx";
 
 
