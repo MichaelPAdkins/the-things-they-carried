@@ -14,7 +14,7 @@ export const Inventory = ({ currentUser }) => {
 
     // Fetch the current carry for the user (example logic, adjust as needed)
     // Assuming you have an endpoint to fetch the current carry for the user
-    fetch(`http://localhost:8088/carry?userId=${currentUser.id}`)
+    fetch(`http://localhost:8088/carries?userId=${currentUser.id}`)
       .then((res) => res.json())
       .then((carries) => {
         if (carries.length > 0) {
