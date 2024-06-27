@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllItems, deleteItem } from '../../services/inventoryServices.jsx';
 import { useNavigate } from 'react-router-dom';
-import './Inventory.css';
+import './inventory.css';
 
 export const Inventory = () => {
   const [items, setItems] = useState([]);
