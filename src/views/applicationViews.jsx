@@ -33,7 +33,7 @@ export const ApplicationViews = () => {
         <Route path="carryForm" element={<CarryCreateForm currentUser={currentUser} />} />
         <Route path="inventory" element={<Inventory currentUser={currentUser} />} />
         <Route path="edit/:id" element={<ItemCreateForm currentUser={currentUser} />} />
-        <Route path="currentCarry" element={<CurrentCarry />} />
+        <Route path="currentCarry" element={<CurrentCarry currentUser={currentUser}/>} />
         {/* <Route path=":itemId/editItem" element={<EditItem currentUser={currentUser} />} /> */}
       </Route>
     </Routes>

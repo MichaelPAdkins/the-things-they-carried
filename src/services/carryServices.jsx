@@ -40,4 +40,9 @@ export const getCarryById = (carry) => {
       },
       body: JSON.stringify({ itemId, carryId, creationTime: new Date().toISOString() })
     }).then((res) => res.json());
-  };
+  }
+
+  export const getCarryByUserId = (userId) => {
+    return fetch(`http://localhost:8088/carries/?userId=${userId}&_expand=user`)
+      .then((res) => res.json());
+  }
