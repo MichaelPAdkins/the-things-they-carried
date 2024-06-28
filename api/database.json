@@ -9,12 +9,22 @@
       "id": 2,
       "username": "cooterrasputin",
       "email": "email@email.com"
+    },
+    {
+      "email": "yahoo@yahoo.com",
+      "username": "yahoo",
+      "id": 3
+    },
+    {
+      "email": "hotmail@hotmail.com",
+      "username": "hotmail",
+      "id": 4
     }
   ],
   "items": [
     {
       "id": 1,
-      "ownerId": 1,
+      "userId": 1,
       "name": "Mystery Ranch Blitz 35",
       "serial": "N/A",
       "material": "Black Cordura",
@@ -26,7 +36,7 @@
     },
     {
       "id": 2,
-      "ownerId": 1,
+      "userId": 1,
       "name": "Fuji X100V",
       "serial": "01A02476",
       "material": "Silver Metallic",
@@ -38,7 +48,7 @@
     },
     {
       "id": 3,
-      "ownerId": 1,
+      "userId": 1,
       "name": "Olight Baton 3 Flashlight",
       "serial": "L51203284",
       "material": "Red Metallic",
@@ -50,7 +60,7 @@
     },
     {
       "id": 4,
-      "ownerId": 2,
+      "userId": 2,
       "name": "Crumpler",
       "serial": "N/A",
       "material": "Red, Blue, and Black Cordura",
@@ -62,7 +72,7 @@
     },
     {
       "id": 5,
-      "ownerId": 2,
+      "userId": 2,
       "name": "Midori Travel Journal",
       "serial": "N/A",
       "material": "Brown Leather",
@@ -82,12 +92,55 @@
       "photo": "raspberry.jpg",
       "storable": true,
       "canStore": true,
-      "id": 10,
-      "user": {
-        "id": 1,
-        "username": "mostexalted",
-        "email": "gmail@gmail.com"
-      }
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "name": "a giant gun",
+      "serial": "666",
+      "material": "gun metal",
+      "type": "gigantic",
+      "value": "priceless",
+      "photo": "gun.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "name": "bullets",
+      "serial": "n/a",
+      "material": "lead",
+      "type": "projectiles",
+      "value": "$1",
+      "photo": "bullet.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 12
+    },
+    {
+      "userId": 4,
+      "name": "bible",
+      "serial": "1",
+      "material": "lambskin",
+      "type": "book",
+      "value": "priceless",
+      "photo": "bible.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 13
+    },
+    {
+      "userId": 4,
+      "name": "white shirt",
+      "serial": "n/a",
+      "material": "cotton poly blend",
+      "type": "mormon shirt with the magic in it",
+      "value": "priceless",
+      "photo": "magicshirt.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 14
     }
   ],
   "carries": [
@@ -132,6 +185,18 @@
       "name": "cryin' by the river",
       "purpose": "cryin'",
       "id": 7
+    },
+    {
+      "userId": 3,
+      "name": "killin down by the river",
+      "purpose": "killin'",
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "name": "on my jehovah's witness trip",
+      "purpose": "winnin souls for the lord",
+      "id": 9
     }
   ],
   "Carry_Items": [
@@ -218,6 +283,42 @@
       "carryId": 2,
       "creationTime": "2024-06-27T17:58:07.152Z",
       "id": 14
+    },
+    {
+      "itemId": 4,
+      "carryId": 2,
+      "creationTime": "2024-06-28T18:13:41.324Z",
+      "id": 15
+    },
+    {
+      "itemId": 1,
+      "carryId": 7,
+      "creationTime": "2024-06-28T18:18:59.161Z",
+      "id": 16
+    },
+    {
+      "itemId": 2,
+      "carryId": 7,
+      "creationTime": "2024-06-28T18:19:02.956Z",
+      "id": 17
+    },
+    {
+      "itemId": 3,
+      "carryId": 7,
+      "creationTime": "2024-06-28T18:19:04.555Z",
+      "id": 18
+    },
+    {
+      "itemId": 13,
+      "carryId": 9,
+      "creationTime": "2024-06-28T18:43:49.240Z",
+      "id": 19
+    },
+    {
+      "itemId": 14,
+      "carryId": 9,
+      "creationTime": "2024-06-28T18:43:51.214Z",
+      "id": 20
     }
   ]
 }

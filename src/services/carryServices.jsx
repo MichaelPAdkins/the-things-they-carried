@@ -46,3 +46,8 @@ export const getCarryById = (carry) => {
     return fetch(`http://localhost:8088/carries/?userId=${userId}&_expand=user`)
       .then((res) => res.json());
   }
+
+  export const getCarryItemsByCarryId = (carryId) => {
+    return fetch(`http://localhost:8088/carry_items/?carryId=${carryId}&_expand=item`)
+      .then((res) => res.json());
+  }

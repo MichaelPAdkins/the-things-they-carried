@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getAllItems, deleteItem } from '../../services/inventoryServices.jsx';
+import { getAllItems, deleteItem, getItemsByUserId } from '../../services/inventoryServices.jsx';
 import { useNavigate } from 'react-router-dom';
 import { addItemToCarry } from '../../services/carryServices.jsx';
 import './inventory.css';
@@ -10,7 +10,7 @@ export const Inventory = ({ currentUser }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    getAllItems().then((items) => setItems(items));
+    getItemsByUserId(currentUser.id).then((items) => setItems(items));
 
     // Fetch the current carry for the user (example logic, adjust as needed)
     // Assuming you have an endpoint to fetch the current carry for the user
@@ -18,7 +18,7 @@ export const Inventory = ({ currentUser }) => {
       .then((res) => res.json())
       .then((carries) => {
         if (carries.length > 0) {
-          setCurrentCarryId(carries[0].id);
+          setCurrentCarryId(carries[carries.length-1].id);
         }
       });
   }, [currentUser]);
@@ -41,7 +41,11 @@ export const Inventory = ({ currentUser }) => {
 
   return (
     <div className="inventory-container">
-      {items.map((item) => (
+      <button onClick={()=>console.log(currentUser.id)}>shit</button>
+      {items.length === 0 ?
+      <div>You don't have any items!</div>
+      :
+      items.map((item) => (
         <div key={item.id} className="card">
           <div className="item-info">
             <h2>{item.name}</h2>
