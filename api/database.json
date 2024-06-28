@@ -9,16 +9,6 @@
       "id": 2,
       "username": "cooterrasputin",
       "email": "email@email.com"
-    },
-    {
-      "email": "yahoo@yahoo.com",
-      "username": "yahoo",
-      "id": 3
-    },
-    {
-      "email": "hotmail@hotmail.com",
-      "username": "hotmail",
-      "id": 4
     }
   ],
   "items": [
@@ -59,16 +49,21 @@
       "photo": "https://via.placeholder.com/150"
     },
     {
-      "id": 4,
       "userId": 2,
-      "name": "Crumpler",
+      "id": 4,
+      "name": "Crumpler Messenger Bag",
       "serial": "N/A",
       "material": "Red, Blue, and Black Cordura",
       "type": "Messenger Bag",
       "storable": false,
       "canStore": true,
       "value": "$200",
-      "photo": "https://via.placeholder.com/150"
+      "photo": "https://via.placeholder.com/150",
+      "user": {
+        "id": 2,
+        "username": "cooterrasputin",
+        "email": "email@email.com"
+      }
     },
     {
       "id": 5,
@@ -81,66 +76,6 @@
       "canStore": true,
       "value": "60",
       "photo": "https://via.placeholder.com/150"
-    },
-    {
-      "userId": 1,
-      "name": "haribo gummy raspberries",
-      "serial": "n/a",
-      "material": "that juicy stuff",
-      "type": "candy",
-      "value": "$50000000000",
-      "photo": "raspberry.jpg",
-      "storable": true,
-      "canStore": true,
-      "id": 10
-    },
-    {
-      "userId": 3,
-      "name": "a giant gun",
-      "serial": "666",
-      "material": "gun metal",
-      "type": "gigantic",
-      "value": "priceless",
-      "photo": "gun.jpg",
-      "storable": true,
-      "canStore": false,
-      "id": 11
-    },
-    {
-      "userId": 3,
-      "name": "bullets",
-      "serial": "n/a",
-      "material": "lead",
-      "type": "projectiles",
-      "value": "$1",
-      "photo": "bullet.jpg",
-      "storable": true,
-      "canStore": false,
-      "id": 12
-    },
-    {
-      "userId": 4,
-      "name": "bible",
-      "serial": "1",
-      "material": "lambskin",
-      "type": "book",
-      "value": "priceless",
-      "photo": "bible.jpg",
-      "storable": true,
-      "canStore": false,
-      "id": 13
-    },
-    {
-      "userId": 4,
-      "name": "white shirt",
-      "serial": "n/a",
-      "material": "cotton poly blend",
-      "type": "mormon shirt with the magic in it",
-      "value": "priceless",
-      "photo": "magicshirt.jpg",
-      "storable": true,
-      "canStore": false,
-      "id": 14
     }
   ],
   "carries": [
@@ -155,170 +90,26 @@
       "userId": 1,
       "name": "Summer Street Photography",
       "purpose": "Photography"
-    },
-    {
-      "userId": 1,
-      "name": "Coffee run in town",
-      "purpose": "EDC",
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "name": "Killing debutante's down by the river",
-      "purpose": "Killin'",
-      "id": 4
-    },
-    {
-      "userId": 1,
-      "name": "Killin even MORE debutantes",
-      "purpose": "Killin' harder",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "name": "Rescuin' debutantes",
-      "purpose": "Rescuin'",
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "name": "cryin' by the river",
-      "purpose": "cryin'",
-      "id": 7
-    },
-    {
-      "userId": 3,
-      "name": "killin down by the river",
-      "purpose": "killin'",
-      "id": 8
-    },
-    {
-      "userId": 4,
-      "name": "on my jehovah's witness trip",
-      "purpose": "winnin souls for the lord",
-      "id": 9
     }
   ],
   "Carry_Items": [
     {
       "id": 1,
-      "itemId": 2,
+      "itemId": 4,
       "carryId": 1,
       "creationTime": "2024-06-20T12:34:56Z"
     },
     {
-      "id": 2,
-      "itemId": 3,
-      "carryId": 1,
-      "creationTime": "2024-06-21T13:45:00Z"
-    },
-    {
-      "id": 3,
-      "itemId": 4,
-      "carryId": 2,
-      "creationTime": "2024-06-21T14:00:00Z"
-    },
-    {
-      "id": 4,
-      "itemId": 5,
-      "carryId": 2,
-      "creationTime": "2024-06-21T15:15:00Z"
-    },
-    {
-      "id": 5,
-      "itemId": 10,
-      "carryId": 1,
-      "creationTime": "2024-06-21T15:15:00Z"
-    },
-    {
-      "itemId": 3,
-      "carryId": 1,
-      "creationTime": "2024-06-27T17:53:30.510Z",
-      "id": 6
-    },
-    {
-      "itemId": 4,
-      "carryId": 1,
-      "creationTime": "2024-06-27T17:53:34.528Z",
-      "id": 7
-    },
-    {
       "itemId": 2,
       "carryId": 2,
-      "creationTime": "2024-06-27T17:56:54.975Z",
-      "id": 8
-    },
-    {
-      "itemId": 2,
-      "carryId": 2,
-      "creationTime": "2024-06-27T17:56:56.845Z",
-      "id": 9
-    },
-    {
-      "itemId": 2,
-      "carryId": 2,
-      "creationTime": "2024-06-27T17:56:58.233Z",
-      "id": 10
-    },
-    {
-      "itemId": 1,
-      "carryId": 2,
-      "creationTime": "2024-06-27T17:58:01.632Z",
-      "id": 11
-    },
-    {
-      "itemId": 3,
-      "carryId": 2,
-      "creationTime": "2024-06-27T17:58:03.660Z",
-      "id": 12
+      "creationTime": "2024-06-28T18:54:13.215Z",
+      "id": 2
     },
     {
       "itemId": 5,
-      "carryId": 2,
-      "creationTime": "2024-06-27T17:58:05.621Z",
-      "id": 13
-    },
-    {
-      "itemId": 10,
-      "carryId": 2,
-      "creationTime": "2024-06-27T17:58:07.152Z",
-      "id": 14
-    },
-    {
-      "itemId": 4,
-      "carryId": 2,
-      "creationTime": "2024-06-28T18:13:41.324Z",
-      "id": 15
-    },
-    {
-      "itemId": 1,
-      "carryId": 7,
-      "creationTime": "2024-06-28T18:18:59.161Z",
-      "id": 16
-    },
-    {
-      "itemId": 2,
-      "carryId": 7,
-      "creationTime": "2024-06-28T18:19:02.956Z",
-      "id": 17
-    },
-    {
-      "itemId": 3,
-      "carryId": 7,
-      "creationTime": "2024-06-28T18:19:04.555Z",
-      "id": 18
-    },
-    {
-      "itemId": 13,
-      "carryId": 9,
-      "creationTime": "2024-06-28T18:43:49.240Z",
-      "id": 19
-    },
-    {
-      "itemId": 14,
-      "carryId": 9,
-      "creationTime": "2024-06-28T18:43:51.214Z",
-      "id": 20
+      "carryId": 1,
+      "creationTime": "2024-06-28T18:55:43.773Z",
+      "id": 3
     }
   ]
 }

@@ -25,7 +25,6 @@ export const CurrentCarry = ({currentUser}) => {
 
     return (
       <div className="carry-container">
-        <button onClick={()=>console.log(carryItems)}>shit</button>
         <div className="carry-group">
           <h2>{thisCarry?.name}</h2>
           {thisCarryId === 0 ? 

@@ -41,7 +41,6 @@ export const Inventory = ({ currentUser }) => {
 
   return (
     <div className="inventory-container">
-      <button onClick={()=>console.log(currentUser.id)}>shit</button>
       {items.length === 0 ?
       <div>You don't have any items!</div>
       :
