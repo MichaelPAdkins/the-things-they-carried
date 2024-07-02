@@ -4,10 +4,15 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import { Navbar } from "../components/navbar/navbar";
 import { ItemCreateForm } from "../components/itemEntry/ItemForm.jsx";
 import { CarryCreateForm } from "../components/carry/CarryForm.jsx";
-import { Inventory } from "../components/inventory/Inventory.jsx";
+import { Inventory } from "../components/inventory/inventory.jsx"
+import { CurrentCarry } from "../components/currentCarry/currentCarry.jsx";
+
 
 export const ApplicationViews = () => {
   const [currentUser, setCurrentUser] = useState({});
+
+  const localCarry_user = localStorage.getItem("carry_user");
+  const carry_userObject = JSON.parse(localCarry_user);
 
   useEffect(() => {
     const localCarry_user = localStorage.getItem("carry_user");
@@ -30,6 +35,8 @@ export const ApplicationViews = () => {
         <Route path="itemForm" element={<ItemCreateForm currentUser={currentUser} />} />
         <Route path="carryForm" element={<CarryCreateForm currentUser={currentUser} />} />
         <Route path="inventory" element={<Inventory currentUser={currentUser} />} />
+        <Route path="edit/:id" element={<ItemCreateForm currentUser={currentUser} />} />
+        <Route path="currentCarry" element={<CurrentCarry currentUser={carry_userObject}/>} />
         {/* <Route path=":itemId/editItem" element={<EditItem currentUser={currentUser} />} /> */}
       </Route>
     </Routes>

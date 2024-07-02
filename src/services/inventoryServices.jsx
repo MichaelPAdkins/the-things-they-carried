@@ -7,3 +7,6 @@ export const getAllItems = () => {
     }).then((res) => res.ok);
   };
   
+  export const getItemsByUserId = (userId) => {
+    return fetch(`http://localhost:8088/items?userId=${userId}`).then((res) => res.json())
+  }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createCarry } from "../../services/carryServices.jsx";
+import { createCarry } from "../../services/carryServices";
 import { Button, Form, Input } from "reactstrap";
 import "./Carry.css";
 

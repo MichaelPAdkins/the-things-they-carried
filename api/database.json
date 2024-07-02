@@ -14,7 +14,7 @@
   "items": [
     {
       "id": 1,
-      "ownerId": 1,
+      "userId": 1,
       "name": "Mystery Ranch Blitz 35",
       "serial": "N/A",
       "material": "Black Cordura",
@@ -25,20 +25,25 @@
       "photo": "https://via.placeholder.com/150"
     },
     {
+      "userId": 1,
       "id": 2,
-      "ownerId": 1,
-      "name": "Fuji X100V",
+      "name": "Fuji X100V ",
       "serial": "01A02476",
       "material": "Silver Metallic",
       "type": "Camera",
       "storable": true,
       "canStore": true,
       "value": "$1400",
-      "photo": "https://via.placeholder.com/150"
+      "photo": "https://via.placeholder.com/150",
+      "user": {
+        "id": 1,
+        "username": "mostexalted",
+        "email": "gmail@gmail.com"
+      }
     },
     {
       "id": 3,
-      "ownerId": 1,
+      "userId": 1,
       "name": "Olight Baton 3 Flashlight",
       "serial": "L51203284",
       "material": "Red Metallic",
@@ -49,20 +54,25 @@
       "photo": "https://via.placeholder.com/150"
     },
     {
+      "userId": 2,
       "id": 4,
-      "ownerId": 2,
-      "name": "Crumpler",
+      "name": "Crumpler Messenger Bag",
       "serial": "N/A",
       "material": "Red, Blue, and Black Cordura",
       "type": "Messenger Bag",
       "storable": false,
       "canStore": true,
       "value": "$200",
-      "photo": "https://via.placeholder.com/150"
+      "photo": "https://via.placeholder.com/150",
+      "user": {
+        "id": 2,
+        "username": "cooterrasputin",
+        "email": "email@email.com"
+      }
     },
     {
       "id": 5,
-      "ownerId": 2,
+      "userId": 2,
       "name": "Midori Travel Journal",
       "serial": "N/A",
       "material": "Brown Leather",
@@ -73,31 +83,240 @@
       "photo": "https://via.placeholder.com/150"
     },
     {
+      "userId": 2,
+      "name": "big ole gun",
+      "serial": "n/a",
+      "material": "gunmetal",
+      "type": "biggun",
+      "value": "priceless",
+      "photo": "gun.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 6
+    },
+    {
       "userId": 1,
-      "name": "na",
-      "serial": "na",
-      "material": "na",
-      "type": "na",
-      "value": "na",
-      "photo": "na.jpb",
-      "storable": "on",
-      "canStore": "on",
+      "name": "Crumpler Fux Deluxe Messenger",
+      "serial": "n/a",
+      "material": "Cordura",
+      "type": "Bag",
+      "value": "$250",
+      "photo": "bag.jpg",
+      "storable": true,
+      "canStore": true,
+      "id": 7,
+      "user": {
+        "id": 1,
+        "username": "mostexalted",
+        "email": "gmail@gmail.com"
+      }
+    },
+    {
+      "userId": 1,
+      "name": "Tenba Skyline 4 Camera pouch",
+      "serial": "n/a",
+      "material": "cordura",
+      "type": "Bag",
+      "value": "$25",
+      "photo": "bag.jpg",
+      "storable": true,
+      "canStore": true,
       "id": 8
     },
     {
       "userId": 1,
-      "name": "hairgel",
-      "serial": "n/a",
-      "material": "viscous liquid",
-      "type": "styling product",
-      "value": "$9",
-      "photo": "image.jpg",
+      "name": "Fuji X100T",
+      "serial": "52A50756",
+      "material": "Metal, glass, plastic",
+      "type": "Camera",
+      "value": "$1,300",
+      "photo": "camera.jpg",
       "storable": true,
       "canStore": false,
       "id": 9
+    },
+    {
+      "userId": 1,
+      "name": "Lamy Safari Fountain Pen EF",
+      "serial": "N/A",
+      "material": "Plastic - Petrol",
+      "type": "Pen",
+      "value": "$35",
+      "photo": "pen.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "name": "Midori Traveler's Journal",
+      "serial": "N/A",
+      "material": "Leather, paper",
+      "type": "Journal",
+      "value": "$65",
+      "photo": "journal.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "name": "Spyderco Stretch",
+      "serial": "N/A",
+      "material": "HAP40 Steel",
+      "type": "Pocket Knife",
+      "value": "$185",
+      "photo": "knife.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "name": "Giotto Rocket Blaster Small",
+      "serial": "n/a",
+      "material": "rubber, plastic",
+      "type": "Photo Accessory",
+      "value": "$19",
+      "photo": "blaster.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "name": "Christy Mariner Pocket Knife",
+      "serial": "n/a",
+      "material": "Brass, stainless",
+      "type": "Pocket Knife",
+      "value": "$65",
+      "photo": "knife.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "name": "Notorious EDC AGP (pouch)",
+      "serial": "n/a",
+      "material": "Cordura - Tiger Stripe",
+      "type": "Pouch",
+      "value": "$50",
+      "photo": "pouch.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "name": "Evergoods Civic Access Pouch",
+      "serial": "n/a",
+      "material": "Cordura",
+      "type": "Pouch",
+      "value": "$75",
+      "photo": "pouch.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "name": "ThinkBook Loaner Laptop",
+      "serial": "n/a",
+      "material": "Plastic",
+      "type": "Laptop",
+      "value": "$Loaner",
+      "photo": "laptop.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "name": "Lomo LC-A  (Russian Vintage Model)",
+      "serial": "n/a",
+      "material": "Plastic, glass",
+      "type": "Camera ",
+      "value": "$300",
+      "photo": "lomo.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "name": "GoPro Hero 9 Black",
+      "serial": "n/a",
+      "material": "Plastic",
+      "type": "Camera",
+      "value": "$250",
+      "photo": "gopro.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "name": "FlipCam Vintage",
+      "serial": "n/a",
+      "material": "Plastic",
+      "type": "Camera",
+      "value": "$50",
+      "photo": "Flip.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "name": "iPad Pro w/ Magic Keyboard",
+      "serial": "n/a",
+      "material": "plastic, glass",
+      "type": "Tablet",
+      "value": "$1600",
+      "photo": "ipad.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "name": "Apple Pencil",
+      "serial": "n/a",
+      "material": "Plastic",
+      "type": "Accessory",
+      "value": "$129",
+      "photo": "pencil.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "name": "Topo Designs Mountain Utility Bag",
+      "serial": "n/a",
+      "material": "Cordura",
+      "type": "Bag",
+      "value": "$65",
+      "photo": "bag.jpg",
+      "storable": true,
+      "canStore": true,
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "name": "Platypod Ultra",
+      "serial": "n/a",
+      "material": "Aluminum, steel",
+      "type": "Photo Accessory Tripod",
+      "value": "$65",
+      "photo": "platypod.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 24
     }
   ],
-  "carry": [
+  "carries": [
     {
       "id": 1,
       "userId": 2,
@@ -105,42 +324,192 @@
       "purpose": "EDC"
     },
     {
-      "id": 1,
+      "id": 2,
       "userId": 1,
       "name": "Summer Street Photography",
       "purpose": "Photography"
     },
     {
+      "userId": 2,
+      "name": "killing myself by the river",
+      "purpose": "killin ",
+      "id": 3
+    },
+    {
       "userId": 1,
-      "name": "Killin' m'self on a tall bridge",
-      "purpose": "Killin' m'self",
-      "id": 2
+      "name": "Cohort 9 daily work ",
+      "purpose": "Work and leisure carry",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "name": "Cohort 9 Carry with photoshoot/creative gear.",
+      "purpose": "Equipment to take me from classwork to impromptu projects.",
+      "id": 5
     }
   ],
   "Carry_Items": [
     {
       "id": 1,
-      "itemId": 2,
+      "itemId": 4,
       "carryId": 1,
       "creationTime": "2024-06-20T12:34:56Z"
     },
     {
-      "id": 2,
-      "itemId": 3,
-      "carryId": 1,
-      "creationTime": "2024-06-21T13:45:00Z"
-    },
-    {
-      "id": 3,
-      "itemId": 4,
+      "itemId": 2,
       "carryId": 2,
-      "creationTime": "2024-06-21T14:00:00Z"
+      "creationTime": "2024-06-28T18:54:13.215Z",
+      "id": 2
     },
     {
-      "id": 4,
       "itemId": 5,
-      "carryId": 2,
-      "creationTime": "2024-06-21T15:15:00Z"
+      "carryId": 1,
+      "creationTime": "2024-06-28T18:55:43.773Z",
+      "id": 3
+    },
+    {
+      "itemId": 6,
+      "carryId": 3,
+      "creationTime": "2024-06-28T19:51:39.101Z",
+      "id": 4
+    },
+    {
+      "itemId": 1,
+      "carryId": 4,
+      "creationTime": "2024-07-01T13:22:22.154Z",
+      "id": 5
+    },
+    {
+      "itemId": 9,
+      "carryId": 4,
+      "creationTime": "2024-07-01T13:22:26.734Z",
+      "id": 6
+    },
+    {
+      "itemId": 8,
+      "carryId": 4,
+      "creationTime": "2024-07-01T13:22:31.960Z",
+      "id": 7
+    },
+    {
+      "itemId": 3,
+      "carryId": 4,
+      "creationTime": "2024-07-01T13:22:47.035Z",
+      "id": 8
+    },
+    {
+      "itemId": 1,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:18.405Z",
+      "id": 9
+    },
+    {
+      "itemId": 3,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:21.823Z",
+      "id": 10
+    },
+    {
+      "itemId": 8,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:29.160Z",
+      "id": 11
+    },
+    {
+      "itemId": 9,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:30.929Z",
+      "id": 12
+    },
+    {
+      "itemId": 10,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:32.603Z",
+      "id": 13
+    },
+    {
+      "itemId": 11,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:33.814Z",
+      "id": 14
+    },
+    {
+      "itemId": 12,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:36.348Z",
+      "id": 15
+    },
+    {
+      "itemId": 13,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:37.879Z",
+      "id": 16
+    },
+    {
+      "itemId": 14,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:39.447Z",
+      "id": 17
+    },
+    {
+      "itemId": 15,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:41.092Z",
+      "id": 18
+    },
+    {
+      "itemId": 16,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:43.368Z",
+      "id": 19
+    },
+    {
+      "itemId": 17,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:44.864Z",
+      "id": 20
+    },
+    {
+      "itemId": 18,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:46.243Z",
+      "id": 21
+    },
+    {
+      "itemId": 19,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:47.658Z",
+      "id": 22
+    },
+    {
+      "itemId": 20,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:50.102Z",
+      "id": 23
+    },
+    {
+      "itemId": 21,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:51.749Z",
+      "id": 24
+    },
+    {
+      "itemId": 22,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:53.257Z",
+      "id": 25
+    },
+    {
+      "itemId": 23,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:55.005Z",
+      "id": 26
+    },
+    {
+      "itemId": 24,
+      "carryId": 5,
+      "creationTime": "2024-07-02T17:41:57.521Z",
+      "id": 27
     }
   ]
 }

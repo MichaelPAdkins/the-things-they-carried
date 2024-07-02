@@ -1,136 +1,115 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { createItem } from "../../services/itemServices.jsx";
+// ItemForm.jsx
+
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { createItem, getItemById, updateItem } from "../../services/itemServices.jsx";
 import { Button, Form, Input } from "reactstrap";
 import "./Item.css";
 
-
-export const ItemCreateForm = ({currentUser}) => {
+export const ItemCreateForm = ({ currentUser }) => {
+  const { id } = useParams(); // Get the item ID from the URL
   const [myItem, setMyItem] = useState({
     name: "",
     serial: "", 
     material: "",
     type: "",
     value: "",
-    photo:"",
+    photo: "",
     storable: false,
     canStore: false
   });
-
   const navigate = useNavigate();
 
-  const handleSave = (item) => {
-    item.preventDefault();
+  useEffect(() => {
+    if (id) {
+      // If there's an ID, we're in edit mode and should fetch the item
+      getItemById(id).then((item) => setMyItem(item));
+    }
+  }, [id]);
+
+  const handleSave = (event) => {
+    event.preventDefault();
     const newItem = {
       userId: currentUser.id,
-      name: myItem.name,
-      serial: myItem.serial,
-      material: myItem.material,
-      type: myItem.type,
-      value: myItem.value,
-      photo: myItem.photo,
-      storable: myItem.storable,
-      canStore: myItem.canStore
+      ...myItem
+    };
+    if (id) {
+      updateItem(newItem).then(() => navigate("/inventory"));
+    } else {
+      createItem(newItem).then(() => navigate("/inventory"));
     }
-    createItem(newItem).then(() => {
-      navigate("/");
-    });
   };
 
   return (
     <Form>
-      <h2 className="header-new-item">Create New Item</h2>
+      <h2 className="header-new-item">{id ? "Edit Item" : "Create New Item"}</h2>
       <div>
         <Input
           type="text"
           placeholder="Name"
-          onChange={(item) => {
-            const itemCopy = { ...myItem };
-            itemCopy.name = item.target.value;
-            setMyItem(itemCopy);
-          }}
+          value={myItem.name}
+          onChange={(e) => setMyItem({...myItem, name: e.target.value})}
         />
       </div>
       <div>
         <Input
           type="text"
           placeholder="Serial"
-          onChange={(item) => {
-            const itemCopy = { ...myItem };
-            itemCopy.serial = item.target.value;
-            setMyItem(itemCopy);
-          }}
+          value={myItem.serial}
+          onChange={(e) => setMyItem({...myItem, serial: e.target.value})}
         />
       </div>
       <div>
         <Input
           type="text"
           placeholder="Material"
-          onChange={(item) => {
-            const itemCopy = { ...myItem };
-            itemCopy.material = item.target.value;
-            setMyItem(itemCopy);
-          }}
+          value={myItem.material}
+          onChange={(e) => setMyItem({...myItem, material: e.target.value})}
         />
       </div>
       <div>
         <Input
           type="text"
           placeholder="Type"
-          onChange={(item) => {
-            const itemCopy = { ...myItem };
-            itemCopy.type = item.target.value;
-            setMyItem(itemCopy);
-          }}
+          value={myItem.type}
+          onChange={(e) => setMyItem({...myItem, type: e.target.value})}
         />
       </div>
       <div>
         <Input
           type="text"
           placeholder="Value"
-          onChange={(item) => {
-            const itemCopy = { ...myItem };
-            itemCopy.value = item.target.value;
-            setMyItem(itemCopy);
-          }}
+          value={myItem.value}
+          onChange={(e) => setMyItem({...myItem, value: e.target.value})}
         />
       </div>
       <div>
         <Input
           type="text"
           placeholder="Photo URL"
-          onChange={(item) => {
-            const itemCopy = { ...myItem };
-            itemCopy.photo = item.target.value;
-            setMyItem(itemCopy);
-          }}
+          value={myItem.photo}
+          onChange={(e) => setMyItem({...myItem, photo: e.target.value})}
         />
       </div>
       <div>
-      <div>Can you pack it?</div>
+        <div>Can you pack it?</div>
         <Input
           type="checkbox"
-          onChange={(item) => {
-            const itemCopy = { ...myItem };
-            itemCopy.storable = item.target.checked;
-            setMyItem(itemCopy);
-          }}
+          checked={myItem.storable}
+          onChange={(e) => setMyItem({...myItem, storable: e.target.checked})}
         />
       </div>
       <div>
         <div>Container?</div>
         <Input
           type="checkbox"
-          onChange={(item) => {
-            const itemCopy = { ...myItem };
-            itemCopy.canStore = item.target.checked;
-            setMyItem(itemCopy);
-          }}
+          checked={myItem.canStore}
+          onChange={(e) => setMyItem({...myItem, canStore: e.target.checked})}
         />
       </div>
 
       <fieldset>
-        <Button color="dark" onClick={handleSave}>Submit New Item</Button>
+        <Button color="dark" onClick={handleSave}>{id ? "Update Item" : "Submit New Item"}</Button>
       </fieldset>
     </Form>
   );
