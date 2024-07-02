@@ -38,6 +38,7 @@ export const CurrentCarry = ({currentUser}) => {
           carryItems.map((currentlyCarried) => {
             return <div>
           {currentlyCarried?.item?.name}
+          <> {currentlyCarried?.item?.value}</>
             </div>
           })}
         </div>
