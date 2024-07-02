@@ -25,16 +25,21 @@
       "photo": "https://via.placeholder.com/150"
     },
     {
-      "id": 2,
       "userId": 1,
-      "name": "Fuji X100V",
+      "id": 2,
+      "name": "Fuji X100V ",
       "serial": "01A02476",
       "material": "Silver Metallic",
       "type": "Camera",
       "storable": true,
       "canStore": true,
       "value": "$1400",
-      "photo": "https://via.placeholder.com/150"
+      "photo": "https://via.placeholder.com/150",
+      "user": {
+        "id": 1,
+        "username": "mostexalted",
+        "email": "gmail@gmail.com"
+      }
     },
     {
       "id": 3,
@@ -76,6 +81,59 @@
       "canStore": true,
       "value": "60",
       "photo": "https://via.placeholder.com/150"
+    },
+    {
+      "userId": 2,
+      "name": "big ole gun",
+      "serial": "n/a",
+      "material": "gunmetal",
+      "type": "biggun",
+      "value": "priceless",
+      "photo": "gun.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "name": "Crumpler Fux Deluxe Messenger",
+      "serial": "n/a",
+      "material": "Cordura",
+      "type": "Bag",
+      "value": "$250",
+      "photo": "bag.jpg",
+      "storable": true,
+      "canStore": true,
+      "id": 7,
+      "user": {
+        "id": 1,
+        "username": "mostexalted",
+        "email": "gmail@gmail.com"
+      }
+    },
+    {
+      "userId": 1,
+      "name": "Tenba Skyline 4 Camera pouch",
+      "serial": "n/a",
+      "material": "cordura",
+      "type": "Bag",
+      "value": "$25",
+      "photo": "bag.jpg",
+      "storable": true,
+      "canStore": true,
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "name": "Fuji X100T",
+      "serial": "52A50756",
+      "material": "Metal, glass, plastic",
+      "type": "Camera",
+      "value": "$1,300",
+      "photo": "camera.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 9
     }
   ],
   "carries": [
@@ -90,6 +148,18 @@
       "userId": 1,
       "name": "Summer Street Photography",
       "purpose": "Photography"
+    },
+    {
+      "userId": 2,
+      "name": "killing myself by the river",
+      "purpose": "killin ",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "Cohort 9 daily work ",
+      "purpose": "Work and leisure carry",
+      "id": 4
     }
   ],
   "Carry_Items": [
@@ -110,6 +180,36 @@
       "carryId": 1,
       "creationTime": "2024-06-28T18:55:43.773Z",
       "id": 3
+    },
+    {
+      "itemId": 6,
+      "carryId": 3,
+      "creationTime": "2024-06-28T19:51:39.101Z",
+      "id": 4
+    },
+    {
+      "itemId": 1,
+      "carryId": 4,
+      "creationTime": "2024-07-01T13:22:22.154Z",
+      "id": 5
+    },
+    {
+      "itemId": 9,
+      "carryId": 4,
+      "creationTime": "2024-07-01T13:22:26.734Z",
+      "id": 6
+    },
+    {
+      "itemId": 8,
+      "carryId": 4,
+      "creationTime": "2024-07-01T13:22:31.960Z",
+      "id": 7
+    },
+    {
+      "itemId": 3,
+      "carryId": 4,
+      "creationTime": "2024-07-01T13:22:47.035Z",
+      "id": 8
     }
   ]
 }
