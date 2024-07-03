@@ -22,7 +22,7 @@ export const CarryCreateForm = ({currentUser}) => {
       purpose: myCarry.purpose
     }
     createCarry(newCarry).then(() => {
-      navigate("/");
+      navigate("/inventory");
     });
   };
 

@@ -8,7 +8,7 @@ export const Home =() => {
         photoshoot, or a trip to get coffee,
       </p>
       <p>
-        this app was designed to help you keep track of the equipment you use to
+        this app was designed to help you keep track of the gear you take to
         make it all run smoothly.
       </p>
     </div>

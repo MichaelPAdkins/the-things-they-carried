@@ -314,6 +314,30 @@
       "storable": true,
       "canStore": false,
       "id": 24
+    },
+    {
+      "userId": 1,
+      "name": "Anker Battery Backup",
+      "serial": "n/a",
+      "material": "plastic",
+      "type": "Accessory",
+      "value": "$20",
+      "photo": "charger.jpg",
+      "storable": true,
+      "canStore": false,
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "name": "A19 Chio Messenger",
+      "serial": "n/a",
+      "material": "Bag",
+      "type": "Cordura - Kryptek",
+      "value": "$150",
+      "photo": "bag.jpg",
+      "storable": true,
+      "canStore": true,
+      "id": 26
     }
   ],
   "carries": [
@@ -346,6 +370,18 @@
       "name": "Cohort 9 Carry with photoshoot/creative gear.",
       "purpose": "Equipment to take me from classwork to impromptu projects.",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "name": "Cohort 9 work, appointment, casual photography and creative work",
+      "purpose": "Daily carry",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "name": "Cohort 9 work, appointment, and creative work",
+      "purpose": "Every day carry",
+      "id": 7
     }
   ],
   "Carry_Items": [
