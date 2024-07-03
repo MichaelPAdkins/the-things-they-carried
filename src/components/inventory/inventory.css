@@ -47,7 +47,7 @@
 }
 
 .delete-button {
-  background-color: #ff4d4d;
+  background-color: #FE5401;
   color: white;
   border: none;
   border-radius: 4px;
@@ -61,7 +61,7 @@
 }
 
 .edit-button {
-    background-color: #ff4d4d;
+    background-color: #FE5401;
     color: white;
     border: none;
     border-radius: 4px;
@@ -75,7 +75,7 @@
   }
 
   .inventory-container .card .add-to-carry-button {
-    background-color: #ff4d4d; /* Green */
+    background-color: #FE5401; /* Green */
     color: white;
     border: none;
     padding: 10px 20px;
